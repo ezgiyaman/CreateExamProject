@@ -1,0 +1,62 @@
+﻿@model List<ArticleVM>
+@{
+    ViewData["Title"] = "List";
+}
+
+
+<div class="col-sm-12">
+    <div class="card">
+        <div class="card-header">
+            <h5 class="card-title">Sınavlar</h5>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Başlık</th>
+                        <th>Tarih</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var article in Model)
+                    {
+                        <tr>
+                            <th scope="row">@article.ArticleId</th>
+                            <td>@article.Title</td>
+                            <td>@article.CreateDate.ToString("yyyy-MM-dd")</td>
+                            <td><a class="btn btn-danger" asp-controller="Article" asp-action="Delete" asp-route-articleId="@article.ArticleId">Sil</a></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<!--<table class="table">
+<thead>
+    <tr>
+        <th>#</th>
+        <th>Başlık</th>
+        <th>Tarih</th>-->
+@*<th scope="col"></th>*@
+<!--</tr>
+    </thead>
+    <tbody>
+        @foreach (var article in Model)
+        {
+<tr>
+    <th scope="row">@article.ArticleId</th>
+    <td>@article.Title</td>
+    <td>@article.CreateDate.ToString("yyyy-MM-dd")</td>
+    <td><a class="btn btn-danger" asp-controller="Article" asp-action="Delete" asp-route-articleId="@article.ArticleId">Sil</a></td>
+</tr>}
+    </tbody>
+</table>-->

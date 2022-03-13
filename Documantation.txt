@@ -1,0 +1,100 @@
+
+-Projemin daha anlaþýlýr olmasý için Onion Architecture uyarak Domain Design Pattern mantýðý ile gerçekleþtirdim.
+-Veritabaný  : SQLite 
+-ORM Aracý : Tasarlama sýrasýnda Entity Framework’den yararlanarak Code first yaklaþýmý ile geliþtirdim.
+-Programlama Dili: C#
+-Uygulama Dil : ASP.NET Core
+
+Sýnav Sistemine Giriþ Ýçin
+Kullanýcý Adý : ezgiymn
+Þifre : 123
+
+
+1.Katmanlý mimari üzerinden projemi kuracaðým için öncellikle Blank Solution açtým.
+
+2.Domain adýnda Class Library türünde projemi açýp,
+Bu katmanda :
+
+-Bu katmanda ihtiyacým doðrultusunda aþaðýdaki paketi yükledim.Üyelik iþlemleri için
+ Microsoft.Extensitation.Identity.Stores 
+
+
+2.1.Enums klasörü açýp Status.cs enumlarýmý tanýmladým.
+2.2.Entities Folder'ý açýp proje boyunca kullanacaðým ana class'larýmý belirtiyorum.
+* Interface Folder altýnda IBaseEntity class'ýnda Concretelerin hepsi bu sýnýfý implement edip kendisine ait özellikler kazandýrýr.
+*Concrete Folder'ýnda proje de ihtiyaç duyulan varlýklar iliþkisel veri tabaný standartýna göre dizayn ettim.
+
+2.3.Repository Pattern kullandým.Veritabanýnda CRUD (Create Read Update Delete) iþlemleri için oluþturmuþ olduðum kodlarýn tekrar kullanýlabilirliðini saðlamak için.Bu pattern kod tekrarýný önlemede büyük önem taþýr.
+2.4.Repository Patternle kullanýlýp veritabaný maliyetlerini oldukça minimize eden bir tasarým deseni olduðu için Unit Of Work Pattern kullandým.Unit Of Work tasarým deseni,veritabanýyla ilgili her bir aksiyonu anlýk olarak veritabanýna yansýtýlmasýný engelleyen ve tüm aksiyonlarýn birikip bir bütün olarak bir defada tek bir connection üzerinden gerçekleþmesini saðlayan tasarým desenidir.
+
+
+
+3.Infrastructure adýnda Class Library türünde projemi açýp,
+Bu katmanda : 
+
+*Domain katmanýný Infrastructure katmanýna refarances olarak ekledim.
+
+Ýhtiyacým doðrultusunda aþaðýdaki paketleri yükledim.
+
+-Microsoft.EntityFrameworkCore.Tools 
+-Microsoft.EntityFrameworkCore.Sqlite 
+-Microsoft.AspNetCore.Identity.EntityFrameworkCore 5.0.12
+
+
+4."Application" adýnda Class Library türünde projemi açýp,
+Bu katmanda :
+
+Ýhtiyacým doðrultusunda aþaðýdaki paketleri yükledim.
+
+-AutoMapper
+-AutoMapper.Extensions.Microsoft.DependencyInjection
+-Autofac.Extensions.DependencyInjection
+-FluentValidation.AspNetCore 
+-FluentValidation.DependencyInjectionExtension
+-Microsoft.AspNetCore.Http.Features
+
+*Domain ve Infrastructure katmanlarý refarances olarak ekledim.
+
+4.1.Models Folderýnýn altýnda oluþturmuþ olduðum, DTO, VM folderlarýnda business
+mantýðýma göre ihtiyacým olan data transfer objelerini ve view model'ler oluþturdum.
+4.2.AutoMapper içerinde oluþturmuþ olduðum VM ve DTOlarý Mapleme iþlemi gerçekleþtirdim.
+4.3.FluentValidation klasörü açýp bu klasör içerisinde kullanýcý giriþ yaparken ve kayýt olurken uyulmasý gereken kurallarý 3rd part tool ile belirttim.
+4.4.Servis folder içerisinde Interface klasöründe Business mantýklarýmý yürütürken kullanacaðým methodlarýmý soyut olarak oluþturdum.Concrete klasöründe ise Business mantýklarýmý yürütürken kullanacaðýmýz methodlarýmý somutlaþtýrdým.
+4.5.IoC : Alt yapý geliþtirken sýký sýkýya baðlý (tight coupled) olmadan  gevþek baðlanmýþ (loosely coupled) bir þekilde geliþtirmeye çalýþtým , esnek bir þekilde entegre edebilmek için dependency inversion (baðýmlýlýðýn ters çevirilmesi) prensibinden faydalanarak alt yapýyý esnek ve tekrar kullanýlabilir bir þekilde tasarladým.
+
+5. "Prensentation" adýnda Asp.net Core web Application (model-view-controller) projesi açtým.Prensentation,kullanýcýnýn uygulama ile iletiþime geçtiði katmandýr. 
+
+*Application ve Infrastructure katmanlarýnýý rerefences olarak ekledim.
+
+Ýhtiyacým doðrultusunda aþaðýdaki paketleri yükledim.
+
+-Microsoft.EntityFrameworkCore.Design
+-Microsoft.VisualStudio.Web.CodeGeneration.Design
+-HtmlAgilityPack
+
+5.1.Program.cs sýnýfýna autofac ekledim.IIS ayaða kaldýrýlýrken 3rd part olarak kullandýðým Autofac cointanier ayaðý kaldýrýlmasý gerekmektedir.
+
+5.2.Startup sýnýfýnda :
+  *SqLite Resolve ettim.
+     => appsettings.json  içinde ConnectionString tanýmladým.
+
+     "AllowedHosts": "*",
+  "ConnectionStrings": {
+    "ProjectContext": "Data Source=CreateExamProject.db"
+
+  *FluentValidation koyduðum kurallarýn çalýþmasý için Startupta belirttim.
+  *Identity Resolve ettim.
+  *LogIn iþlemi için endpoints yolunu belirttim.
+
+
+
+  
+
+
+
+
+
+
+
+
+
