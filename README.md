@@ -1,8 +1,8 @@
 
 -Projemin daha anlaşılır olması için Onion Architecture uyarak Domain Design Pattern mantığı ile gerçekleştirdim.
--Veritabanı  : SQLite 
--ORM Aracı : Tasarlama sırasında Entity Framework’den yararlanarak Code first yaklaşımı ile geliştirdim.
--Programlama Dili: C#
+* # Veritabanı  : SQLite 
+# ORM Aracı : Tasarlama sırasında Entity Framework’den yararlanarak Code first yaklaşımı ile geliştirdim.
+# Programlama Dili: C#
 -Uygulama Dil : ASP.NET Core
 
 Sınav Sistemine Giriş İçin
