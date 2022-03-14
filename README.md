@@ -25,10 +25,10 @@ Bu katmanda ihtiyacım doğrultusunda aşağıdaki paketi yükledim.Üyelik işl
  - Microsoft.Extensitation.Identity.Stores 
 
 
-* 2.1.Enums klasörü açıp Status.cs enumlarımı tanımladım.
-* 2.2.Entities Folder'ı açıp proje boyunca kullanacağım ana class'larımı belirtiyorum.
-* Interface Folder altında IBaseEntity class'ında Concretelerin hepsi bu sınıfı implement edip kendisine ait özellikler kazandırır.
-* Concrete Folder'ında proje de ihtiyaç duyulan varlıklar ilişkisel veri tabanı standartına göre dizayn ettim.
+ 2.1.Enums klasörü açıp Status.cs enumlarımı tanımladım.
+2.2.Entities Folder'ı açıp proje boyunca kullanacağım ana class'larımı belirtiyorum.
+Interface Folder altında IBaseEntity class'ında Concretelerin hepsi bu sınıfı implement edip kendisine ait özellikler kazandırır.
+Concrete Folder'ında proje de ihtiyaç duyulan varlıklar ilişkisel veri tabanı standartına göre dizayn ettim.
 
 2.3.Repository Pattern kullandım.Veritabanında CRUD (Create Read Update Delete) işlemleri için oluşturmuş olduğum kodların tekrar kullanılabilirliğini sağlamak için.Bu pattern kod tekrarını önlemede büyük önem taşır.
 2.4.Repository Patternle kullanılıp veritabanı maliyetlerini oldukça minimize eden bir tasarım deseni olduğu için Unit Of Work Pattern kullandım.Unit Of Work tasarım deseni,veritabanıyla ilgili her bir aksiyonu anlık olarak veritabanına yansıtılmasını engelleyen ve tüm aksiyonların birikip bir bütün olarak bir defada tek bir connection üzerinden gerçekleşmesini sağlayan tasarım desenidir.
