@@ -13,12 +13,12 @@
 
 1.Katmanlı mimari üzerinden projemi kuracağım için öncellikle Blank Solution açtım.
 
-2.Domain adında Class Library türünde projemi açıp,
+* ## 2.Domain adında Class Library türünde projemi açıp,
 Bu katmanda :
 
 * Bu katmanda ihtiyacım doğrultusunda aşağıdaki paketi yükledim.Üyelik işlemleri için : 
 
- Microsoft.Extensitation.Identity.Stores 
+ - Microsoft.Extensitation.Identity.Stores 
 
 
 * 2.1.Enums klasörü açıp Status.cs enumlarımı tanımladım.
@@ -29,16 +29,16 @@ Bu katmanda :
 * 2.3.Repository Pattern kullandım.Veritabanında CRUD (Create Read Update Delete) işlemleri için oluşturmuş olduğum kodların tekrar kullanılabilirliğini sağlamak için.Bu pattern kod tekrarını önlemede büyük önem taşır.
 * 2.4.Repository Patternle kullanılıp veritabanı maliyetlerini oldukça minimize eden bir tasarım deseni olduğu için Unit Of Work Pattern kullandım.Unit Of Work tasarım deseni,veritabanıyla ilgili her bir aksiyonu anlık olarak veritabanına yansıtılmasını engelleyen ve tüm aksiyonların birikip bir bütün olarak bir defada tek bir connection üzerinden gerçekleşmesini sağlayan tasarım desenidir.
 
-* # 3.Infrastructure adında Class Library türünde projemi açıp,
+* ## 3.Infrastructure adında Class Library türünde projemi açıp,
 Bu katmanda : 
 
 *Domain katmanını Infrastructure katmanına refarances olarak ekledim.
 
 İhtiyacım doğrultusunda aşağıdaki paketleri yükledim.
 
-#-Microsoft.EntityFrameworkCore.Tools 
-#-Microsoft.EntityFrameworkCore.Sqlite 
-#-Microsoft.AspNetCore.Identity.EntityFrameworkCore 5.0.12
+-Microsoft.EntityFrameworkCore.Tools 
+-Microsoft.EntityFrameworkCore.Sqlite 
+-Microsoft.AspNetCore.Identity.EntityFrameworkCore 5.0.12
 
 
 * ## 4."Application" adında Class Library türünde projemi açıp,
