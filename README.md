@@ -13,9 +13,10 @@
   * Şifre : 123
 
 
+
 1.Katmanlı mimari üzerinden projemi kuracağım için öncellikle Blank Solution açtım.
 
-* ## 2.Domain adında Class Library türünde projemi açıp,
+ ## 2.Domain adında Class Library türünde projemi açıp,
 Bu katmanda :
 
 * Bu katmanda ihtiyacım doğrultusunda aşağıdaki paketi yükledim.Üyelik işlemleri için : 
@@ -31,7 +32,7 @@ Bu katmanda :
 * 2.3.Repository Pattern kullandım.Veritabanında CRUD (Create Read Update Delete) işlemleri için oluşturmuş olduğum kodların tekrar kullanılabilirliğini sağlamak için.Bu pattern kod tekrarını önlemede büyük önem taşır.
 * 2.4.Repository Patternle kullanılıp veritabanı maliyetlerini oldukça minimize eden bir tasarım deseni olduğu için Unit Of Work Pattern kullandım.Unit Of Work tasarım deseni,veritabanıyla ilgili her bir aksiyonu anlık olarak veritabanına yansıtılmasını engelleyen ve tüm aksiyonların birikip bir bütün olarak bir defada tek bir connection üzerinden gerçekleşmesini sağlayan tasarım desenidir.
 
-* ## 3.Infrastructure adında Class Library türünde projemi açıp,
+ ## 3.Infrastructure adında Class Library türünde projemi açıp,
 Bu katmanda : 
 
 *Domain katmanını Infrastructure katmanına refarances olarak ekledim.
@@ -43,7 +44,7 @@ Bu katmanda :
 -Microsoft.AspNetCore.Identity.EntityFrameworkCore 5.0.12
 
 
-* ## 4."Application" adında Class Library türünde projemi açıp,
+## 4."Application" adında Class Library türünde projemi açıp,
 Bu katmanda :
 
 * İhtiyacım doğrultusunda aşağıdaki paketleri yükledim.
@@ -64,7 +65,7 @@ mantığıma göre ihtiyacım olan data transfer objelerini ve view model'ler ol
 * 4.4.Servis folder içerisinde Interface klasöründe Business mantıklarımı yürütürken kullanacağım methodlarımı soyut olarak oluşturdum.Concrete klasöründe ise Business mantıklarımı yürütürken kullanacağımız methodlarımı somutlaştırdım.
 * 4.5.IoC : Alt yapı geliştirken sıkı sıkıya bağlı (tight coupled) olmadan  gevşek bağlanmış (loosely coupled) bir şekilde geliştirmeye çalıştım , esnek bir şekilde entegre edebilmek için dependency inversion (bağımlılığın ters çevirilmesi) prensibinden faydalanarak alt yapıyı esnek ve tekrar kullanılabilir bir şekilde tasarladım.
 
-* ## 5. "Prensentation" adında Asp.net Core web Application (model-view-controller) projesi açtım.Prensentation,kullanıcının uygulama ile iletişime geçtiği katmandır. 
+## 5. "Prensentation" adında Asp.net Core web Application (model-view-controller) projesi açtım.Prensentation,kullanıcının uygulama ile iletişime geçtiği katmandır. 
 
 * Application ve Infrastructure katmanlarınıı rerefences olarak ekledim.
 
