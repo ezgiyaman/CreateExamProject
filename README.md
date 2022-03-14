@@ -9,8 +9,8 @@
 
 
 ## Sınav Sistemine Giriş İçin : 
-**Kullanıcı Adı : ezgiymn
- **Şifre : 123
+  * Kullanıcı Adı : ezgiymn
+  * Şifre : 123
 
 
 1.Katmanlı mimari üzerinden projemi kuracağım için öncellikle Blank Solution açtım.
