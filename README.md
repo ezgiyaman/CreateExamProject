@@ -61,12 +61,12 @@ Bu katmanda :
 
 * Domain ve Infrastructure katmanları refarances olarak ekledim.
 
-* 4.1.Models Folderının altında oluşturmuş olduğum, DTO, VM folderlarında business
+4.1.Models Folderının altında oluşturmuş olduğum, DTO, VM folderlarında business
 mantığıma göre ihtiyacım olan data transfer objelerini ve view model'ler oluşturdum.
-* 4.2.AutoMapper içerinde oluşturmuş olduğum VM ve DTOları Mapleme işlemi gerçekleştirdim.
-* 4.3.FluentValidation klasörü açıp bu klasör içerisinde kullanıcı giriş yaparken ve kayıt olurken uyulması gereken kuralları 3rd part tool ile belirttim.
-* 4.4.Servis folder içerisinde Interface klasöründe Business mantıklarımı yürütürken kullanacağım methodlarımı soyut olarak oluşturdum.Concrete klasöründe ise Business mantıklarımı yürütürken kullanacağımız methodlarımı somutlaştırdım.
-* 4.5.IoC : Alt yapı geliştirken sıkı sıkıya bağlı (tight coupled) olmadan  gevşek bağlanmış (loosely coupled) bir şekilde geliştirmeye çalıştım , esnek bir şekilde entegre edebilmek için dependency inversion (bağımlılığın ters çevirilmesi) prensibinden faydalanarak alt yapıyı esnek ve tekrar kullanılabilir bir şekilde tasarladım.
+4.2.AutoMapper içerinde oluşturmuş olduğum VM ve DTOları Mapleme işlemi gerçekleştirdim.
+4.3.FluentValidation klasörü açıp bu klasör içerisinde kullanıcı giriş yaparken ve kayıt olurken uyulması gereken kuralları 3rd part tool ile belirttim.
+4.4.Servis folder içerisinde Interface klasöründe Business mantıklarımı yürütürken kullanacağım methodlarımı soyut olarak oluşturdum.Concrete klasöründe ise Business mantıklarımı yürütürken kullanacağımız methodlarımı somutlaştırdım.
+4.5.IoC : Alt yapı geliştirken sıkı sıkıya bağlı (tight coupled) olmadan  gevşek bağlanmış (loosely coupled) bir şekilde geliştirmeye çalıştım , esnek bir şekilde entegre edebilmek için dependency inversion (bağımlılığın ters çevirilmesi) prensibinden faydalanarak alt yapıyı esnek ve tekrar kullanılabilir bir şekilde tasarladım.
 
 ## 5. "Prensentation" adında Asp.net Core web Application (model-view-controller) projesi açtım.Prensentation,kullanıcının uygulama ile iletişime geçtiği katmandır. 
 
