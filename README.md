@@ -1,23 +1,24 @@
 
 * ## Projemin daha anlaşılır olması için Onion Architecture uyarak Domain Design Pattern mantığı ile gerçekleştirdim.
-*  Veritabanı  : SQLite 
-*  ORM Aracı : Tasarlama sırasında Entity Framework’den yararlanarak Code first yaklaşımı ile geliştirdim.
-* Programlama Dili: C#
-*  Uygulama Dil : ASP.NET Core
+* ## Veritabanı  : SQLite 
+* ## ORM Aracı : Tasarlama sırasında Entity Framework’den yararlanarak Code first yaklaşımı ile geliştirdim.
+* ##Programlama Dili: C#
+*  ##Uygulama Dil : ASP.NET Core
 
 
-# Sınav Sistemine Giriş İçin
-# Kullanıcı Adı : ezgiymn
-# Şifre : 123
+## Sınav Sistemine Giriş İçin
+## Kullanıcı Adı : ezgiymn
+## Şifre : 123
 
 
 1.Katmanlı mimari üzerinden projemi kuracağım için öncellikle Blank Solution açtım.
 
-2.Domain adında Class Library türünde projemi açıp,
+ # 2.Domain adında Class Library türünde projemi açıp,
 Bu katmanda :
 
--Bu katmanda ihtiyacım doğrultusunda aşağıdaki paketi yükledim.Üyelik işlemleri için
- Microsoft.Extensitation.Identity.Stores 
+* Bu katmanda ihtiyacım doğrultusunda aşağıdaki paketi yükledim.Üyelik işlemleri için : 
+
+ ## Microsoft.Extensitation.Identity.Stores 
 
 
 2.1.Enums klasörü açıp Status.cs enumlarımı tanımladım.
@@ -67,9 +68,9 @@ mantığıma göre ihtiyacım olan data transfer objelerini ve view model'ler ol
 
 İhtiyacım doğrultusunda aşağıdaki paketleri yükledim.
 
--Microsoft.EntityFrameworkCore.Design
--Microsoft.VisualStudio.Web.CodeGeneration.Design
--HtmlAgilityPack
+## Microsoft.EntityFrameworkCore.Design
+## Microsoft.VisualStudio.Web.CodeGeneration.Design
+## HtmlAgilityPack
 
 5.1.Program.cs sınıfına autofac ekledim.IIS ayağa kaldırılırken 3rd part olarak kullandığım Autofac cointanier ayağı kaldırılması gerekmektedir.
 
