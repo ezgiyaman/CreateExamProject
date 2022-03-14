@@ -83,7 +83,7 @@ mantığıma göre ihtiyacım olan data transfer objelerini ve view model'ler ol
 
      "AllowedHosts": "*",
   "ConnectionStrings": {
-    "ProjectContext": "Data Source=CreateExamProject.db"
+    "ProjectContext": "Data Source=CreateExamProject.db"}
 
   * FluentValidation koyduğum kuralların çalışması için Startupta belirttim.
   * Identity Resolve ettim.
