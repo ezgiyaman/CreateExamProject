@@ -49,12 +49,12 @@ Bu katmanda :
 
 * İhtiyacım doğrultusunda aşağıdaki paketleri yükledim.
 
-AutoMapper
-AutoMapper.Extensions.Microsoft.DependencyInjection
-Autofac.Extensions.DependencyInjection
-FluentValidation.AspNetCore 
-FluentValidation.DependencyInjectionExtension
-Microsoft.AspNetCore.Http.Features
+* AutoMapper
+* AutoMapper.Extensions.Microsoft.DependencyInjection
+* Autofac.Extensions.DependencyInjection
+* FluentValidation.AspNetCore 
+* FluentValidation.DependencyInjectionExtension
+* Microsoft.AspNetCore.Http.Features
 
 *Domain ve Infrastructure katmanları refarances olarak ekledim.
 
@@ -71,9 +71,9 @@ mantığıma göre ihtiyacım olan data transfer objelerini ve view model'ler ol
 
 * İhtiyacım doğrultusunda aşağıdaki paketleri yükledim.
 
-Microsoft.EntityFrameworkCore.Design
-Microsoft.VisualStudio.Web.CodeGeneration.Design
-HtmlAgilityPack
+* Microsoft.EntityFrameworkCore.Design
+* Microsoft.VisualStudio.Web.CodeGeneration.Design
+* HtmlAgilityPack
 
 5.1.Program.cs sınıfına autofac ekledim.IIS ayağa kaldırılırken 3rd part olarak kullandığım Autofac cointanier ayağı kaldırılması gerekmektedir.
 
@@ -85,9 +85,9 @@ HtmlAgilityPack
   "ConnectionStrings": {
     "ProjectContext": "Data Source=CreateExamProject.db"
 
-  *FluentValidation koyduğum kuralların çalışması için Startupta belirttim.
-  *Identity Resolve ettim.
-  *LogIn işlemi için endpoints yolunu belirttim.
+  * FluentValidation koyduğum kuralların çalışması için Startupta belirttim.
+  * Identity Resolve ettim.
+  * LogIn işlemi için endpoints yolunu belirttim.
 
 
 
