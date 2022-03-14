@@ -67,9 +67,9 @@ mantığıma göre ihtiyacım olan data transfer objelerini ve view model'ler ol
 
 İhtiyacım doğrultusunda aşağıdaki paketleri yükledim.
 
-# Microsoft.EntityFrameworkCore.Design
-# Microsoft.VisualStudio.Web.CodeGeneration.Design
-# HtmlAgilityPack
+-Microsoft.EntityFrameworkCore.Design
+-Microsoft.VisualStudio.Web.CodeGeneration.Design
+-HtmlAgilityPack
 
 5.1.Program.cs sınıfına autofac ekledim.IIS ayağa kaldırılırken 3rd part olarak kullandığım Autofac cointanier ayağı kaldırılması gerekmektedir.
 
