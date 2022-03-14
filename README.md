@@ -6,9 +6,11 @@
 * ## Uygulama Dil : ASP.NET Core
 
 
-## Sınav Sistemine Giriş İçin
-## Kullanıcı Adı : ezgiymn
-## Şifre : 123
+
+
+## Sınav Sistemine Giriş İçin : 
+**Kullanıcı Adı : ezgiymn
+ **Şifre : 123
 
 
 1.Katmanlı mimari üzerinden projemi kuracağım için öncellikle Blank Solution açtım.
