@@ -13,12 +13,12 @@
 
 1.Katmanlı mimari üzerinden projemi kuracağım için öncellikle Blank Solution açtım.
 
- # 2.Domain adında Class Library türünde projemi açıp,
+2.Domain adında Class Library türünde projemi açıp,
 Bu katmanda :
 
 * Bu katmanda ihtiyacım doğrultusunda aşağıdaki paketi yükledim.Üyelik işlemleri için : 
 
- ## Microsoft.Extensitation.Identity.Stores 
+ Microsoft.Extensitation.Identity.Stores 
 
 
 * 2.1.Enums klasörü açıp Status.cs enumlarımı tanımladım.
@@ -46,12 +46,12 @@ Bu katmanda :
 
 * İhtiyacım doğrultusunda aşağıdaki paketleri yükledim.
 
-## AutoMapper
-## AutoMapper.Extensions.Microsoft.DependencyInjection
-## Autofac.Extensions.DependencyInjection
-## FluentValidation.AspNetCore 
-## FluentValidation.DependencyInjectionExtension
-## Microsoft.AspNetCore.Http.Features
+AutoMapper
+AutoMapper.Extensions.Microsoft.DependencyInjection
+Autofac.Extensions.DependencyInjection
+FluentValidation.AspNetCore 
+FluentValidation.DependencyInjectionExtension
+Microsoft.AspNetCore.Http.Features
 
 *Domain ve Infrastructure katmanları refarances olarak ekledim.
 
@@ -68,9 +68,9 @@ mantığıma göre ihtiyacım olan data transfer objelerini ve view model'ler ol
 
 * İhtiyacım doğrultusunda aşağıdaki paketleri yükledim.
 
-## Microsoft.EntityFrameworkCore.Design
-## Microsoft.VisualStudio.Web.CodeGeneration.Design
-## HtmlAgilityPack
+Microsoft.EntityFrameworkCore.Design
+Microsoft.VisualStudio.Web.CodeGeneration.Design
+HtmlAgilityPack
 
 5.1.Program.cs sınıfına autofac ekledim.IIS ayağa kaldırılırken 3rd part olarak kullandığım Autofac cointanier ayağı kaldırılması gerekmektedir.
 
