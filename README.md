@@ -1,13 +1,13 @@
 
-* Projemin daha anlaşılır olması için Onion Architecture uyarak Domain Design Pattern mantığı ile gerçekleştirdim.
+*  # Projemin daha anlaşılır olması için Onion Architecture uyarak Domain Design Pattern mantığı ile gerçekleştirdim.
 * # Veritabanı  : SQLite 
 * # ORM Aracı : Tasarlama sırasında Entity Framework’den yararlanarak Code first yaklaşımı ile geliştirdim.
 * # Programlama Dili: C#
 * # Uygulama Dil : ASP.NET Core
 
-Sınav Sistemine Giriş İçin
-Kullanıcı Adı : ezgiymn
-Şifre : 123
+# Sınav Sistemine Giriş İçin
+# Kullanıcı Adı : ezgiymn
+# Şifre : 123
 
 
 1.Katmanlı mimari üzerinden projemi kuracağım için öncellikle Blank Solution açtım.
@@ -26,8 +26,6 @@ Bu katmanda :
 
 2.3.Repository Pattern kullandım.Veritabanında CRUD (Create Read Update Delete) işlemleri için oluşturmuş olduğum kodların tekrar kullanılabilirliğini sağlamak için.Bu pattern kod tekrarını önlemede büyük önem taşır.
 2.4.Repository Patternle kullanılıp veritabanı maliyetlerini oldukça minimize eden bir tasarım deseni olduğu için Unit Of Work Pattern kullandım.Unit Of Work tasarım deseni,veritabanıyla ilgili her bir aksiyonu anlık olarak veritabanına yansıtılmasını engelleyen ve tüm aksiyonların birikip bir bütün olarak bir defada tek bir connection üzerinden gerçekleşmesini sağlayan tasarım desenidir.
-
-
 
 3.Infrastructure adında Class Library türünde projemi açıp,
 Bu katmanda : 
