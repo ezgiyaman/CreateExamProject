@@ -93,8 +93,7 @@ mantığıma göre ihtiyacım olan data transfer objelerini ve view model'ler ol
   * LogIn işlemi için endpoints yolunu belirttim.
 
 
-
-  
+ * "wired.com" da yayınlanan son 5 yazının başlıkları çıkmalı kısmını yapmaya çalıştım ancak sınav ekranına verileri getirmede başarısız oldum.
 
 
 
