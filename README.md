@@ -1,9 +1,10 @@
 
-*  # Projemin daha anlaşılır olması için Onion Architecture uyarak Domain Design Pattern mantığı ile gerçekleştirdim.
-* # Veritabanı  : SQLite 
-* # ORM Aracı : Tasarlama sırasında Entity Framework’den yararlanarak Code first yaklaşımı ile geliştirdim.
-* # Programlama Dili: C#
-* # Uygulama Dil : ASP.NET Core
+* Projemin daha anlaşılır olması için Onion Architecture uyarak Domain Design Pattern mantığı ile gerçekleştirdim.
+*  Veritabanı  : SQLite 
+*  ORM Aracı : Tasarlama sırasında Entity Framework’den yararlanarak Code first yaklaşımı ile geliştirdim.
+* Programlama Dili: C#
+*  Uygulama Dil : ASP.NET Core
+
 
 # Sınav Sistemine Giriş İçin
 # Kullanıcı Adı : ezgiymn
@@ -34,9 +35,9 @@ Bu katmanda :
 
 İhtiyacım doğrultusunda aşağıdaki paketleri yükledim.
 
--Microsoft.EntityFrameworkCore.Tools 
--Microsoft.EntityFrameworkCore.Sqlite 
--Microsoft.AspNetCore.Identity.EntityFrameworkCore 5.0.12
+#-Microsoft.EntityFrameworkCore.Tools 
+#-Microsoft.EntityFrameworkCore.Sqlite 
+#-Microsoft.AspNetCore.Identity.EntityFrameworkCore 5.0.12
 
 
 4."Application" adında Class Library türünde projemi açıp,
@@ -66,9 +67,9 @@ mantığıma göre ihtiyacım olan data transfer objelerini ve view model'ler ol
 
 İhtiyacım doğrultusunda aşağıdaki paketleri yükledim.
 
--Microsoft.EntityFrameworkCore.Design
--Microsoft.VisualStudio.Web.CodeGeneration.Design
--HtmlAgilityPack
+# Microsoft.EntityFrameworkCore.Design
+# Microsoft.VisualStudio.Web.CodeGeneration.Design
+# HtmlAgilityPack
 
 5.1.Program.cs sınıfına autofac ekledim.IIS ayağa kaldırılırken 3rd part olarak kullandığım Autofac cointanier ayağı kaldırılması gerekmektedir.
 
