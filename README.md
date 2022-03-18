@@ -1,7 +1,7 @@
 
 * ## Projemin daha anlaşılır olması için Onion Architecture uyarak Domain Design Pattern mantığı ile gerçekleştirdim.
 * ## Veritabanı  : SQLite 
-* ## ORM Aracı : Tasarlama sırasında Entity Framework’den yararlanarak Code first yaklaşımı ile geliştirdim.
+* ## ORM Aracı : Tasarlama sırasında Entity Framework’den yararlanarak Code first yaklaşımı
 * ## Programlama Dili: C#
 * ## Uygulama Dil : ASP.NET Core
 
@@ -14,7 +14,7 @@
 
 
 
-1.Katmanlı mimari üzerinden projemi kuracağım için öncellikle Blank Solution açtım.
+ ## 1.Katmanlı mimari üzerinden projemi kuracağım için öncellikle Blank Solution açtım.
 
  ## 2.Domain adında Class Library türünde projemi açıp,
  
